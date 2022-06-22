@@ -12,7 +12,6 @@ namespace ExerAula05
         static void Main(string[] args)
         {
             //Media();
-            //Voo();
             Calculadora();
         }
 
@@ -32,16 +31,6 @@ namespace ExerAula05
             Console.ReadLine();
         }
 
-        static void Voo()
-        {
-            Voo voo = new Voo
-            {
-                numeroPoltrona = 12,
-            };
-
-            Console.WriteLine(voo.OcuparPoltrona());
-            Console.ReadLine();
-        }
 
         static void Calculadora()
         {

@@ -13,33 +13,38 @@ namespace Aula07Exer
         private int _frequencia;
 
 
-        public Aluno(string nome)
+        public Aluno()
         {
-            _nome = nome;
             _notas = new List<int>();
-            _frequencia = 0;
 
-            Console.WriteLine(_nome);
-            Console.WriteLine(_frequencia);
+            Console.WriteLine("==== Cadastro de Aluno =====");
 
         }
 
-        public Aluno Cadastrar(string nome)
+        public void Cadastrar(string nome)
         {
-            return new Aluno(nome);
+            _nome = nome;
+            Console.WriteLine("Nome: " + _nome);
         }
 
         public void AddNota(int nota)
         {
             _notas.Add(nota);
 
+            foreach (var n in _notas)
+            {
+                Console.WriteLine("Nota: " + n);
+            }
+
         }
 
         public void DefinirFrequencia(int frequencia)
         {
             _frequencia = frequencia;
+            Console.WriteLine("Frequencia: " + _frequencia);
+
         }
-        
+
 
     }
 }
